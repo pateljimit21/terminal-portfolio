@@ -15,16 +15,16 @@ public class Portfolio{
 
         int topicsDone = 2;
         int totalTopics = 12;
-        double percentComplete = (topicsDone * 100 / totalTopics);
+        double percentComplete = (topicsDone * 100.0 / totalTopics);
         
         boolean openToWork = true;
 
         System.out.println("==================================================");
         System.out.println(name.toUpperCase() + " | " + role);
-        System.out.println(app + " v" + version);
+        System.out.println(app.toUpperCase() + " v" + version);
         System.out.println("==================================================");
         System.out.printf("Experience: %.1f years%n", experience);
-        System.out.printf("Java roadmap: %.0f%% complete (%d/%d topics)", percentComplete, topicsDone, totalTopics);
+        System.out.printf("Java roadmap: %.0f%% complete (%d/%d topics)%n", percentComplete, topicsDone, totalTopics);
         System.out.println("Open to work: " + openToWork);
         System.out.println("==================================================");
         System.out.println("Type '/help' to get started.");
